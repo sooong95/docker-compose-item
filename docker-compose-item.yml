@@ -67,10 +67,6 @@ services:
     container_name: sj-item-service
     ports:
       - "8081:8080"
-    depends_on:
-      - sj-gateway
-      - sj-item-db
-      - sj-config-server
 
 volumes:
   rabbitmq_data:
